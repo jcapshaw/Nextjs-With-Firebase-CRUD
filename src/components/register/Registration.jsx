@@ -13,7 +13,7 @@ const Registration = () => {
 
   useEffect(() => {
     if (!isLoading && authUser) {
-       navigate("contact");
+      navigate("contact");
     }
   }, [isLoading, authUser]);
   return isLoading || (!isLoading && authUser) ? (
@@ -29,7 +29,7 @@ const Registration = () => {
           <main className="flex lg:h-[100vh]">
             <div className="w-full  p-8 md:p-14 flex items-center justify-center ">
               <div className="p-8 w-[600px]">
-                <h1 className="text-6xl font-semibold">Sign Up</h1>
+                <h1 className="text-3xl font-semibold">Sign Up</h1>
                 <p className="mt-6 ml-1">
                   Already have an account ?{" "}
                   <span
@@ -98,7 +98,7 @@ const Registration = () => {
                 </div>
                 <button
                   type="submit"
-                  className="bg-black text-white w-44 py-4 mt-10 rounded-full transition-transform hover:bg-black/[0.8] active:scale-90"
+                  className="bg-black text-white w-44 py-4 mt-10 rounded-full transition-transform hover:bg-blue-600/[0.8] active:scale-90"
                 >
                   Sign Up
                 </button>
